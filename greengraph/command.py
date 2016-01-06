@@ -2,7 +2,7 @@ from argparse import ArgumentParser
 from matplotlib import pyplot as plt
 from graph import Greengraph
 
-if __name__ == "__process__":
+def process():
     parser = ArgumentParser(description = "Generate graph of proportion of green pixel in a series of satellite images between two points:")
     parser.add_argument('--fromS', '-f')
     parser.add_argument('--to')
@@ -10,6 +10,8 @@ if __name__ == "__process__":
     parser.add_argument('--out')
     arguments= parser.parse_args()
     
+if __name__ == "__main__":
+    process()    
 
     print(arguments.to, arguments.fromS, arguments.steps, arguments.out)
 
