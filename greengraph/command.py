@@ -10,9 +10,6 @@ def process():
     parser.add_argument('--out')
     arguments= parser.parse_args()
     
-if __name__ == "__main__":
-    process()    
-
     print(arguments.to, arguments.fromS, arguments.steps, arguments.out)
 
     mygraph=Greengraph(arguments.fromS,arguments.to)
@@ -20,4 +17,9 @@ if __name__ == "__main__":
 
     plt.plot(data)
     plt.savefig(arguments.out)
+    
+if __name__ == "__main__":
+    process()    
+
+   
     
