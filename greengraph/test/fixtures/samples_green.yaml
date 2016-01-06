@@ -1,0 +1,7 @@
+- lat: 51.5073509
+  longs: -0.1277583
+  satellite: True
+  zoom: 10
+  size: [2, 2] 
+  threshold: 0
+  answer: True
