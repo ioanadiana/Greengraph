@@ -19,7 +19,7 @@ def test_geolocate():
 		    assert_equal(geo.geolocate(location), answer)
     
 
-test_geolocate()
+#test_geolocate()
 
 def test_location_sequence():
     with open(os.path.join(os.path.dirname(__file__),'fixtures','samples_location_sequence.yaml')) as fixtures_file:
@@ -35,7 +35,7 @@ def test_location_sequence():
 		    answer = geo.location_sequence(geo.geolocate(start),geo.geolocate(end),steps)
 		    assert(answer[0][0]==lats1 and answer[0][1]==longs1)	
 
-test_geolocate()	
+#test_geolocate()	
 
 
 def test_green_between():
@@ -49,7 +49,7 @@ def test_green_between():
             answer = geo.green_between(steps)
             assert_equal(geo.green_between(steps), answer) 
 
-test_geolocate()
+#test_geolocate()
 
 geo = Map(51.5073509, -0.1277583, satellite=True, zoom=10, size=(2,2))
 print geo.green(1.1)
@@ -70,6 +70,6 @@ def test_green():
 			geo = Map(lat, longs, satellite, zoom, size)
 			assert_equal(sum(sum(geo.green(threshold)==True)), size[0]*size[1])
 
-test_geolocate()
+#test_geolocate()
 
 
