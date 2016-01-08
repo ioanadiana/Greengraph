@@ -11,9 +11,9 @@ def process():
     parser.add_argument('--out')
     arguments= parser.parse_args()
     
-    print(arguments.to, arguments.fromS, arguments.steps, arguments.out)
+    print(arguments.to, arguments.fromCity, arguments.steps, arguments.out)
 
-    mygraph=Greengraph(arguments.fromS,arguments.to)
+    mygraph=Greengraph(arguments.fromCity,arguments.to)
     data = mygraph.green_between(arguments.steps)
 
     plt.plot(data)
