@@ -7,7 +7,7 @@ from ..map import Map
 from ..graph import Greengraph
 
 def test_geolocate():
-    with open(os.path.join(os.path.dirname(__file__),'fixtures','samples.yaml')) as fixtures_file:
+    with open(os.path.join(os.path.dirname(__file__),'fixtures','samples_geolocate.yaml')) as fixtures_file:
 	    fixtures = yaml.load(fixtures_file)
 	    for fixture in fixtures:
 		    location = fixture.pop('location')    
