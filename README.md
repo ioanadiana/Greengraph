@@ -1,6 +1,6 @@
 
 This is the first continuous assessment as part of the Research Software Egineering with Python course.
-Student: Ioana Oprea (ioana.oprea.15@ucl.ac.ul)
+Student: Ioana Hill (ioana.hill@ucl.ac.uk)
 
 To Install run the following command:
 
